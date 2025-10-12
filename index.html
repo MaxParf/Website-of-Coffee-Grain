@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кафе Зернышко</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- ========== ШАПКА САЙТА ========== -->
+    <header class="header">
+      <div class="container header__container">
+        <!-- Левая часть: логотип -->
+        <div class="header__logo-wrapper">
+          <a href="index.html" class="header__logo-link">
+            <img class="header__logo" src="images/svg_style/logo.svg"
+              alt="Логотип ресторана" />
+          </a>
+        </div>
+        <!-- Правая часть: навигация + кнопка -->
+        <div class="header__content">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#about" class="header__nav-link">О нас</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#menu" class="header__nav-link">Меню</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#reviews" class="header__nav-link">Отзывы</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#contacts" class="header__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__btn" href="#contacts">Связаться</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== ГЛАВНЫЙ БАННЕР ========== -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Добро пожаловать <span
+              class="hero__content-line-break">в <span
+                class="hero__quote">«</span>Зернышко<span
+                class="hero__quote">»</span></span></h1>
+          <h2 class="hero__subtitle">Ароматный кофе и уютная<br>атмосфера каждый день</br></h2>
+          <p class="hero__description">Мы готовим кофе с душой и верим, что каждая чашка —<br>это маленькое наслаждение, созданное для вас.<span class="hero__description-line-break">Мы предлагаем свежие зерна, уникальные авторские</span>рецепты и заботу о природе. Наши бариста рады<br>подарить вам вкус и уют, из-за которых захочется</br>возвращаться снова и снова.</span>
+          </p>
+          <a href="#menu" class="hero__btn">Посмотреть меню</a>
+        </div>
+
+        <div class="hero__decor">
+          <img src="images/header/board.png" alt="Доска" class="hero__board" />
+          <img src="images/header/cup_of_coffee.png" alt="Кофе"
+            class="hero__coffee" />
+          <img src="images/header/cookie_with_chocolate_cream.png" alt="Печенье"
+            class="hero__cookie" />
+          <img src="images/header/cinnamon_swirl_pastry.png" alt="Синабон"
+            class="hero__cinnamon" />
+          <img src="images/header/coffee_beans.png" alt="Кофейные зерна"
+            class="hero__beans" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== БЛОК "О НАС" ========== -->
+    <section id="about" class="about">
+      <div class="container about__container">
+        <h2 class="about__title">О нас</h2>
+        <div class="about__content">
+          <div class="about__cards">
+            <!-- Карточка 1 -->
+            <div class="about__card">
+              <img class="about__card-img"
+                src="images/about/about_history.png" alt="Фото" />
+              <div class="about__card-content">
+                <h2 class="about__card-title">История</h2>
+                <p class="about__description">«Зернышко» — кофейня, которая
+                  родилась из любви к хорошему кофе и желания создать место
+                  уюта для каждого.<span
+                    class="about__description-line-break">Открытая в 2020
+                    году, кофейня быстро стала любимой как для ценителей кофе,
+                    так и для тех, кто просто ищет спокойное место для
+                    отдыха.</span></p>
+              </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="about__card">
+              <img class="about__card-img"
+                src="images/about/about_cappuccino.png" alt="Фото" />
+              <div class="about__card-content">
+                <h2 class="about__card-title">Философия</h2>
+                <p class="about__description">Мы верим, что каждая чашка кофе
+                  — это особый момент.<span
+                    class="about__description-line-break">Стремимся создать
+                    теплую дружелюбную атмосферу, где каждый гость чувствует
+                    себя как дома.</span>Наши бариста с заботой подходят к
+                  каждому заказу, создавая напитки с любовью и вниманием к
+                  деталям.</p>
+              </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="about__card">
+              <img class="about__card-img" src="images/about/about_coffee.png"
+                alt="Фото" />
+              <div class="about__card-content">
+                <h2 class="about__card-title">Свежее зерно</h2>
+                <p class="about__description">Мы используем только свежие
+                  зерна и экспериментируем с оригинальными рецептами, чтобы
+                  радовать гостей уникальными вкусами.<span
+                    class="about__description-line-break">Наша команда
+                    сотрудничает с локальными обжарщиками, поддерживая высокое
+                    качество и разнообразие.</span></p>
+              </div>
+            </div>
+            <!-- Карточка 4 -->
+            <div class="about__card">
+              <img class="about__card-img" src="images/about/about_nature.png"
+                alt="Фото" />
+              <div class="about__card-content">
+                <h2 class="about__card-title">Забота о природе</h2>
+                <p class="about__description">Мы стараемся уменьшить
+                  экологический след, используя биоразлагаемые стаканчики и
+                  предлагая скидки для тех, кто приходит со своей чашкой.<span
+                    class="about__description-line-break">Мы заботимся не
+                    только о клиентах, но и о планете.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== БЛОК "МЕНЮ" ========== -->
+    <section id="menu" class="menu">
+      <div class="container menu__container">
+        <div class="menu__container-top">
+          <h2 class="menu__top-title">Меню</h2>
+
+          <!-- Категории меню -->
+          <div class="menu__categories">
+            <button class="menu__category" data-menu="coffee">Кофе</button>
+            <button class="menu__category"
+              data-menu="desserts">Десерты</button>
+            <button class="menu__category" data-menu="snacks">Закуски</button>
+          </div>
+        </div>
+
+        <!-- Список карточек (меняется через JS) -->
+        <div class="menu__items" id="menu-items">
+          <div class="menu__coffee">
+            <!-- Карточка 1 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/coffee/white_cup_with_cappuccino.png"
+                  alt="Блюдо" class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">240 ₽</span>
+                <p class="menu__desc">Капучино на миндальном молоке с
+                  кокосовым
+                  сиропом</p>
+                <p class="menu__volume">350 мл</p>
+              </div>
+            </div>
+            <!-- Карточка 2 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/coffee/cup_of_coffee.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">270 ₽</span>
+                <p class="menu__desc">Латте на кокосовом молоке с кленовым
+                  сиропом </p>
+                <p class="menu__volume">350 мл</p>
+              </div>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/coffee/coffee_cup_3.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">360 ₽</span>
+                <p class="menu__desc">Раф с карамельным сиропоми шоколадом</p>
+                <p class="menu__volume">250 мл</p>
+              </div>
+            </div>
+            <!-- Карточка 4 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/coffee/coffee_cup_4.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">160 ₽</span>
+                <p class="menu__desc">Классический американо с зарядом
+                  бодрости</p>
+                <p class="menu__volume">300 мл</p>
+              </div>
+            </div>
+            <!-- Карточка 5 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/coffee/coffee_cup_5.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">160 ₽</span>
+                <p class="menu__desc">Флет уайт с насыщенным вкусом эфиопского
+                  эспрессо</p>
+                <p class="menu__volume">300 мл</p>
+              </div>
+            </div>
+            <!-- Карточка 6 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/coffee/coffee_cup_6.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">270 ₽</span>
+                <p class="menu__desc">Латте на овсяном молоке с добавлением
+                  корицы</p>
+                <p class="menu__volume">300 мл</p>
+              </div>
+            </div>
+            <!-- Карточка 7 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/coffee/coffee_cup_7.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">180 ₽</span>
+                <p class="menu__desc">Двойной эспрессо с высоким зарядом
+                  энергии</p>
+                <p class="menu__volume">300 мл</p>
+              </div>
+            </div>
+            <!-- Карточка 8 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/coffee/coffee_cup_8.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">240 ₽</span>
+                <p class="menu__desc">Капучино на соевом молоке с ореховым
+                  сиропом</p>
+                <p class="menu__volume">300 мл</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__desserts">
+            <!-- Карточка 1 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/desserts/cinnamon_bun.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">240 ₽</span>
+                <p class="menu__desc">Синабон с ароматной корицей и
+                  глазурью</p>
+                <p class="menu__volume">250 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 2 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/desserts/vanilla_creme_crown.png"
+                  alt="Блюдо" class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">270 ₽</span>
+                <p class="menu__desc">Воздушная датская слойка с нежным кремом
+                </p>
+                <p class="menu__volume">250 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/desserts/creme_brulee.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">360 ₽</span>
+                <p class="menu__desc">Нежный крем-брюле с ягодами и
+                  карамельной корочкой</p>
+                <p class="menu__volume">150 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 4 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/desserts/round_snail_pastry.png"
+                  alt="Блюдо" class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">270 ₽</span>
+                <p class="menu__desc">Улитка с яблочно-лимонным джемом и
+                  изюмом</p>
+                <p class="menu__volume">250 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 5 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/desserts/chocolate_cake_piece.png"
+                  alt="Блюдо" class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">160 ₽</span>
+                <p class="menu__desc">Шоколадно-кофейный торт с глубоким
+                  вкусом какао</p>
+                <p class="menu__volume">170 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 6 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/desserts/raspberry_chocolate_cake.png"
+                  alt="Блюдо" class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">180 ₽</span>
+                <p class="menu__desc">Шоколадная тарталетка с кремом и
+                  малиной</p>
+                <p class="menu__volume">150 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 7 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/desserts/honey_cake.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">240 ₽</span>
+                <p class="menu__desc">Классический медовик со сливочным
+                  кремом</p>
+                <p class="menu__volume">250 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 8 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/desserts/chocolate_cake_slice.png"
+                  alt="Блюдо" class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">160 ₽</span>
+                <p class="menu__desc">Торт с нежным кремом, корицей и
+                  шоколадом</p>
+                <p class="menu__volume">300 гр</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__snacks">
+            <!-- Карточка 1 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/snacks/almond_nuts.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">240 ₽</span>
+                <p class="menu__desc">Миндаль — идеальная закуска для
+                  перекуса</p>
+                <p class="menu__volume">200 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 2 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/snacks/cookies.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">360 ₽</span>
+                <p class="menu__desc">Классическое печенье с кусочками
+                  шоколада</p>
+                <p class="menu__volume">250 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/snacks/onion_ring_chips.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">270 ₽</span>
+                <p class="menu__desc">Баранки с легкой солью — отличное
+                  дополнение к кофе</p>
+                <p class="menu__volume">350 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 4 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/snacks/cookie_2.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">160 ₽</span>
+                <p class="menu__desc">Булочка с маком, покрытая нежной
+                  сахарной глазурью</p>
+                <p class="menu__volume">150 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 5 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/snacks/cashews.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">270 ₽</span>
+                <p class="menu__desc">Свежий, хрустящий кешью — полезный
+                  перекус</p>
+                <p class="menu__volume">300 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 6 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/snacks/cookie_with_chocolate_cream.png"
+                  alt="Блюдо" class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">160 ₽</span>
+                <p class="menu__desc">Мягкое печенье с начинкой из шоколада
+                </p>
+                <p class="menu__volume">150 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 7 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/snacks/pancakes_poured_with_butter.png"
+                  alt="Блюдо" class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">180 ₽</span>
+                <p class="menu__desc">Нежные панкейки с сладким медом и
+                  маслом</p>
+                <p class="menu__volume">300 гр</p>
+              </div>
+            </div>
+            <!-- Карточка 8 -->
+            <div class="menu__card">
+              <div class="menu__card-image">
+                <img src="images/menu/snacks/samosa.png" alt="Блюдо"
+                  class="menu__card-items" />
+              </div>
+              <div class="menu__card-info">
+                <span class="menu__price">240 ₽</span>
+                <p class="menu__desc">Сытные треугольники с сырной
+                  начинкой</p>
+                <p class="menu__volume">250 гр</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== БЛОК "ОТЗЫВЫ" ========== -->
+    <section id="reviews" class="reviews">
+      <div class="container reviews__container">
+        <div class="reviews__container-content">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__list">
+
+            <!-- Отзыв 1 -->
+            <div class="reviews__card">
+              <div class="reviews__card-item">
+                <div class="reviews__card-ava">
+                  <img class="reviews__avatar" src="images/reviews/ava_1.png"
+                    alt />
+                  <div class="reviews__author">
+                    <p class="reviews__name">Ирина</p>
+                    <div class="reviews__stars">
+                      <!-- SVG звезды -->
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_1.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_2.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_3.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_4.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_5.svg"></use></svg>
+                    </div>
+                  </div>
+                </div>
+                <p class="reviews__text">Очень уютное место! Всегда чувствуешь
+                  себя желанным гостем, а ваши бариста не только готовят
+                  отличный и вкусный кофе, но и могут подсказать что-то
+                  новенькое попробовать.</p>
+              </div>
+            </div>
+            <!-- Отзыв 2 -->
+            <div class="reviews__card">
+              <div class="reviews__card-item">
+                <div class="reviews__card-ava">
+                  <img class="reviews__avatar" src="images/reviews/ava_2.png"
+                    alt />
+                  <div class="reviews__author">
+                    <p class="reviews__name">Игорь</p>
+                    <div class="reviews__stars">
+                      <!-- SVG звезды -->
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_1.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_2.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_3.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_4.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_5.svg"></use></svg>
+                    </div>
+                  </div>
+                </div>
+                <p class="reviews__text">Я настоящий кофеман, и «Зернышко»
+                  удивило меня качеством! Здесь всегда свежие зерна и
+                  интересные
+                  рецепты — каждый раз нахожу новый вкус для себя. Рекомендую
+                  всем своим друзьям.</p>
+              </div>
+            </div>
+            <!-- Отзыв 3 -->
+            <div class="reviews__card">
+              <div class="reviews__card-item">
+                <div class="reviews__card-ava">
+                  <img class="reviews__avatar" src="images/reviews/ava_3.png"
+                    alt />
+                  <div class="reviews__author">
+                    <p class="reviews__name">Александр</p>
+                    <div class="reviews__stars">
+                      <!-- SVG звезды -->
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_1.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_2.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_3.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_4.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_5.svg"></use></svg>
+                    </div>
+                  </div>
+                </div>
+                <p class="reviews__text">Приятно видеть, что кофейня заботится
+                  о
+                  природе. Экологичная упаковка, скидка за свою чашку — такие
+                  мелочи, а настро-ение поднимают! Приятно, что здесь думают о
+                  планете.</p>
+              </div>
+            </div>
+            <!-- Отзыв 4 -->
+            <div class="reviews__card">
+              <div class="reviews__card-item">
+                <div class="reviews__card-ava">
+                  <img class="reviews__avatar" src="images/reviews/ava_4.png"
+                    alt />
+                  <div class="reviews__author">
+                    <p class="reviews__name">Эльза</p>
+                    <div class="reviews__stars">
+                      <!-- SVG звезды -->
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_1.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_2.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_3.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_4.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_5.svg"></use></svg>
+                    </div>
+                  </div>
+                </div>
+                <p class="reviews__text">В «Зернышке» особенная атмосфера:
+                  уютно, стильно и спокойно. Идеальное место, чтобы сбежать от
+                  городской суеты, почитать книгу или просто расслабиться за
+                  чашкой кофе.</p>
+              </div>
+            </div>
+            <!-- Отзыв 5 -->
+            <div class="reviews__card">
+              <div class="reviews__card-item">
+                <div class="reviews__card-ava">
+                  <img class="reviews__avatar" src="images/reviews/ava_5.png"
+                    alt />
+                  <div class="reviews__author">
+                    <p class="reviews__name">Андрей</p>
+                    <div class="reviews__stars">
+                      <!-- SVG звезды -->
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_1.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_2.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_3.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_4.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_5.svg"></use></svg>
+                    </div>
+                  </div>
+                </div>
+                <p class="reviews__text">Бариста всегда приветливые и открытые
+                  к
+                  общению. Люблю, когда заходишь, и тебя встречают с улыбкой и
+                  вниманием к деталям. Кажется, что здесь всех знают по имени
+                  и
+                  каждому рады.</p>
+              </div>
+            </div>
+            <!-- Отзыв 6 -->
+            <div class="reviews__card">
+              <div class="reviews__card-item">
+                <div class="reviews__card-ava">
+                  <img class="reviews__avatar" src="images/reviews/ava_6.png"
+                    alt />
+                  <div class="reviews__author">
+                    <p class="reviews__name">Кристина</p>
+                    <div class="reviews__stars">
+                      <!-- SVG звезды -->
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_1.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_2.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_3.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_4.svg"></use></svg>
+                      <svg class="reviews__star"><use
+                          href="images/svg_style/Star_5.svg"></use></svg>
+                    </div>
+                  </div>
+                </div>
+                <p class="reviews__text">Каждая чашка кофе в «Зернышке» словно
+                  маленький шедевр. Ощущается внимание к мелочам — от аромата
+                  до
+                  оформления напитка. Это то место, куда хочется возвращаться
+                  снова и снова.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== БЛОК "КОНТАКТЫ" ========== -->
+    <section id="contacts" class="contacts">
+      <div class="container contacts__container">
+        <h2 class="contacts__title">Как нас найти</h2>
+        <div class="contacts__content">
+          <div class="contacts__wrapper">
+            <!-- Блок контактов -->
+            <div class="contacts__inner">
+              <div class="contacts__info">
+                <div class="contacts__items">
+                  <h2 class="contacts__label">Контакты</h2>
+                  <div class="contacts__details">
+                    <div class="contacts__detail">
+                      <div class="contacts__detail-icon">
+                        <svg class="contacts__icon"><use
+                            href="images/svg_style/call.svg"></use></svg>
+                      </div>
+                      <div class="contacts__detail-content">
+                        <a href="tel:+79999999999" class="contacts__link">+7
+                          (999) 999-99-99</a>
+                      </div>
+                    </div>
+                    <div class="contacts__detail">
+                      <div class="contacts__detail-icon">
+                        <svg class="contacts__icon"><use
+                            href="images/svg_style/email.svg"></use></svg>
+                      </div>
+                      <div class="contacts__detail-content">
+                        <a href="mailto:info@restaurant.ru"
+                          class="contacts__link">info@restaurant.ru</a>
+                      </div>
+                    </div>
+                    <div class="contacts__detail">
+                      <div class="contacts__detail-icon">
+                        <svg class="contacts__icon"><use
+                            href="images/svg_style/vector.svg"></use></svg>
+                      </div>
+                    <div class="contacts__detail-content">
+                      <span class="contacts__text">СПб, Коржекова, 5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Блок бронирования -->
+            <div class="contacts__booking">
+                <div class="booking">
+                  <h2 class="booking__label">Бронирование</h2>
+                  <div class="booking__content">
+                    <form class="booking__form" id="bookingForm">
+                      <input class="booking__input" type="text" name="name"
+                        placeholder="Ваше имя" required />
+                      <input class="booking__input" type="tel" name="phone"
+                        placeholder="Ваш номер телефона" required />
+                      <input class="booking__input" type="text"
+                        name="comment" placeholder="Комментарий" required />
+                      <button type="submit"
+                      class="booking__btn">Забронировать</button>
+                    </form>
+                    <!-- Модальное окно -->
+                    <div id="bookingModal" class="booking-modal">
+                      <div class="booking-modal__content">
+                        <p id="bookingModalMessage"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <!-- Карта -->
+            <div class="contacts__map">
+              <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab4f61e0bd0228e35c6692e910c246acb19f40c5acbdf2da0457770e1dc9af658&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ПОДВАЛ ========== -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__right">
+          <div class="footer__logo">
+            <a href="index.html"><img class="footer__logo-item"
+                src="images/svg_style/logo.svg" alt="Логотиg ресторана" /></a>
+          </div>
+          <div class="footer__copyright">
+            <p class="footer__copyright-text">© 2025 Все права защищены.</p>
+          </div>
+        </div>
+        <div class="footer__left">
+          <!-- Меню -->
+          <nav class="footer__nav">
+            <a href="#about" class="footer__link">О нас</a>
+            <a href="#menu" class="footer__link">Меню</a>
+            <a href="#reviews" class="footer__link">Отзывы</a>
+            <a href="#contacts" class="footer__link">Контакты</a>
+          </nav>
+          <!-- Соцсети -->
+          <div class="footer__socials">
+            <div class="footer__social-vk">
+              <a href="#" class="footer__social-link" aria-label="VK"><svg
+                  class="footer__social-icon"><use
+                    href="images/svg_style/vk.svg"></use></svg></a>
+            </div>
+            <div class="footer__social-inst">
+              <a href="#" class="footer__social-link"
+                aria-label="Instagram"><svg class="footer__social-icon"><use
+                    href="images/svg_style/inst.svg"></use></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Подключение JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

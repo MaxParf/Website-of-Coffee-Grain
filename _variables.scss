@@ -1,0 +1,28 @@
+/* Переменные кафе "Зернышко" */
+
+/* === Шрифты === */
+$font-primary: 'Montserrat Alternates', sans-serif;
+
+/* === Цвета === */
+$color-text: #45403D;        // основной цвет текстов
+$color-placeholder: #9A9A9A; // placeholder & copyright
+$color-bg-white: #FFFFFF;    // белый фон
+$color-bg-grey: #F6F5F4;     // серый фон
+$color-decor: #A26539;       // декор кнопок и hover
+$color-text-hover: #FFFFFF;  // цвет текста hover и фона карт отзывов и контактов
+
+/* === Размеры контейнера === */
+$container-width: 1200px;
+$container-padding: 120px;
+
+/* === Адаптивные брейкпоинты === */
+$desktop: 1440px;
+$tablet: 1024px;
+$mobile: 768px;
+
+/* === Тени и скругления === */
+$radius-base: 24px;          // общий радиус
+$shadow-and-blurs: 0px 4px 20px rgba(0, 0, 0, 0.14);
+
+/* === Прочее === */
+$transition-base: all 0.3s ease;
